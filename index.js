@@ -9,13 +9,14 @@ while (singleChar.length > 1){
 function makeLine(size) {
   let line = '';
   for (i = 0; i < size; i++){
-    line += '#';
+    line += singleChar;
   }
   return line;
 }
 
-//console.log(makeLine(9));
+console.log(makeLine(9));
 
+console.log('\n')
 
 
 function makeRectangle(width, height) {
@@ -26,9 +27,9 @@ function makeRectangle(width, height) {
   return rectangle.slice(0, -1);
 }
 
-//console.log(makeRectangle(5, 3));
+console.log(makeRectangle(5, 3));
 
-
+console.log('\n')
 
 
 function makeSquare(width){
@@ -38,7 +39,9 @@ function makeSquare(width){
   }
   return square;
 }
-//console.log(makeSquare(5));
+console.log(makeSquare(5));
+
+console.log('\n')
 
 
 
@@ -50,7 +53,10 @@ function makeDownwardStairs(height){
   return stairs.slice(0, -1);
 }
 
-//console.log(makeDownwardStairs(5));
+console.log(makeDownwardStairs(5));
+
+console.log('\n')
+
 
 function makeSpaceLine(numSpaces, numChars) {
   let spaces = '';
@@ -59,13 +65,14 @@ function makeSpaceLine(numSpaces, numChars) {
     spaces += ' ';
   }
   for (i = 0; i < numChars; i++){
-    hashes += '#';
+    hashes += singleChar;
   }
   return spaces + hashes + spaces;
 }
 
-//console.log(makeSpaceLine(3, 5));
+console.log(makeSpaceLine(3, 5));
 
+console.log('\n')
 
 
 
@@ -77,7 +84,8 @@ function makeIsoscelesTriangle(height){
   return triangle.slice(0,-1);
 }
 
-//console.log(makeIsoscelesTriangle(5));
+console.log(makeIsoscelesTriangle(5));
+console.log('\n')
 
 
 
@@ -89,5 +97,5 @@ function makeDiamond(height){
   return diamond.slice(0,-1) + '\n' + diamond.slice(0,-1).split('').reverse().join('');
 }
 
-//console.log(makeDiamond(5));
+console.log(makeDiamond(5));
 
